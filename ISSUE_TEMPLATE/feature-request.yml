@@ -2,12 +2,12 @@ name: Feature Request
 description: File a feature request.
 title: "[Feature]: <title>"
 labels: ["enhancement", "help wanted"]
-type: feature
 body:
   - type: markdown
     attributes:
       value: |
         Aby bolo možné čo najpodrobnejšie opísať váš nápad, venujte prosím čas vyplneniu tohto formulára.
+
   - type: input
     id: title
     attributes:
@@ -16,33 +16,34 @@ body:
       placeholder: napr. "Pridanie dark mode"
     validations:
       required: true
+
   - type: textarea
     id: description
     attributes:
       label: Popis
-      description: Jasný a stručný popis navrhovanej funkcie. Uveďte dôvody, prečo túto funkciu navrhujete. Súvisí vaša požiadavka s konkrétnym problémom? Napr. „Pracujem na X a chcel by som, aby bolo možné Y“. Ak to súvisí s iným problémom na GitHub, uveďte sem aj odkaz.
-      placeholder: "Pre lepší používateľský zážitok... bla bla bla... tmavý režim na stránke... bla bla bla..."
-      value: ""
+      description: Jasný a stručný popis navrhovanej funkcie. Uveďte dôvody, prečo túto funkciu navrhujete. Súvisí vaša požiadavka s konkrétnym problémom?
+      placeholder: "Pre lepší používateľský zážitok... tmavý režim na stránke..."
     validations:
       required: true
+
   - type: textarea
     id: alternatives
     attributes:
       label: Alternatívne riešenia
-      description: Popis akýchkoľvek alternatívnych riešení alebo funkcií, ktoré ste zvažovali, ak existujú.
+      description: Popis akýchkoľvek alternatívnych riešení alebo funkcií, ktoré ste zvažovali.
       placeholder: ""
-      value: ""
     validations:
       required: false
+
   - type: textarea
     id: extra
     attributes:
       label: Doplňujúci kontext
       description: Pridajte akýkoľvek ďalší kontext alebo snímky obrazovky týkajúce sa požiadavky na funkciu.
       placeholder: ""
-      value: ""
     validations:
       required: false
+
   - type: checkboxes
     id: terms
     attributes:
@@ -53,11 +54,9 @@ body:
           required: true
         - label: Chcem vykonať implementáciu tejto funkcie sám. (self assign)
           required: false
-    validations:
-      required: true
+
   - type: markdown
     attributes:
       value: |
         Ďakujeme za príspevok k rozvoju projektu.
         Na uloženie formulára kliknite na tlačidlo "Submit new issue".
-      
