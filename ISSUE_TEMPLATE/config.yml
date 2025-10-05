@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussion
+    url: https://github.com/orgs/BEST-Kosice/discussions
+    about: "Položte otázku alebo sa s nami podelte o svoj nápad na GitHub alebo na Discord v kanáli #it-wg."
+  - name: 📝 Contributing
+    url: https://github.com/BEST-Kosice/.github?tab=contributing-ov-file#
+    about: "Pred otvorením nového issue sa uistite, že ste si pozorne prečítali CONTRIBUTING.md."
